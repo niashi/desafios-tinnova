@@ -6,4 +6,5 @@ export class Veiculo {
     public ano: number
     public descricao: string
     public vendido: boolean
+    
 }

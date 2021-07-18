@@ -1,5 +1,7 @@
+import { VeiculoService } from '../service/veiculo.service';
 import { Component, OnInit } from '@angular/core';
-import { Router } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
+import { Veiculo } from '../model/Veiculo';
 
 @Component({
   selector: 'app-veiculos',
@@ -8,14 +10,21 @@ import { Router } from '@angular/router';
 })
 export class VeiculosComponent implements OnInit {
 
+    listaVeiculos: Veiculo[]
+
   constructor(
-    private router: Router
+    private router: Router,
+    private route: ActivatedRoute,
+    private veiculoService: VeiculoService
   ) { }
 
   ngOnInit() {
+    this.findAllVeiculos()
   }
 
-  mostrarLista() {
-    
+  findAllVeiculos() {
+    this.veiculoService.getAllVeiculos().subscribe((resp: Veiculo[]) => {
+      this.listaVeiculos = resp
+    })
   }
 }

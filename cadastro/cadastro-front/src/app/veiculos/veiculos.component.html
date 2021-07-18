@@ -1,48 +1,61 @@
 <div class="container">
-    <div class="row">
-      <div class="col-md-12">
-        <h1 class="text-center mt-5">Cadastro e atualização de veículos</h1>
-        <button (click)='mostrarLista()'>Clique aqui</button>
+
+  <div class="row">
+    <div class="col-md-9 d-flex align-items-center">
+      <h1 class="text-center">Cadastro e atualização de veículos</h1>  
+    </div>
+
+    <div class="col-md-3 mt-5 mb-5 ml-5">
+      <div class="row">
+        <button class="btn btn-outline-dark">Cadastrar veículo 🚘</button>
+      </div>
+
+      <div class="row">
+        <button class="btn btn-outline-secondary mt-5" routerLink='/sobre'>Sobre o projeto 💡</button>
       </div>
     </div>
   </div>
+
+</div>
   
-  <div class="div">
-    <table class="table table-hover">
-        <thead>
-          <tr>
-            <th scope="col">ID</th>
-            <th scope="col">Veículo</th>
-            <th scope="col">Marca</th>
-            <th scope="col">Ano</th>
-            <th scope="col">Descrição</th>
-            <th scope="col">Vendido</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <th scope="row">1</th>
-            <td>Mark</td>
-            <td>Otto</td>
-            <td>@mdo</td>
-            <td>Otto</td>
-            <td>@mdo</td>
-          </tr>
-          <tr>
-            <th scope="row">2</th>
-            <td>Jacob</td>
-            <td>Thornton</td>
-            <td>@fat</td>
-            <td>Otto</td>
-            <td>@mdo</td>
-          </tr>
-          <tr>
-            <th scope="row">3</th>
-            <td colspan="2">Larry the Bird</td>
-            <td>@twitter</td>
-            <td>Otto</td>
-            <td>@mdo</td>
-          </tr>
-        </tbody>
-      </table>
+  <div class="container">
+
+    <div class="row">
+      <div class="col-md-12">
+        <table class="table table-hover">
+
+          <thead>
+            <tr>
+              <th scope="col">ID</th>
+              <th scope="col">Veículo</th>
+              <th scope="col">Marca</th>
+              <th scope="col">Ano</th>
+              <th scope="col">Descrição</th>
+              <th scope="col">Vendido</th>
+              <th scope="col"></th>
+              <th scope="col"></th>
+            </tr>
+          </thead>
+
+          <tbody>
+            <tr *ngFor='let item of listaVeiculos'>
+              <th>{{item.id}}</th>
+              <td>{{item.veiculo}}</td>
+              <td>{{item.marca}}</td>
+              <td>{{item.ano}}</td>
+              <td>{{item.descricao}}</td>
+              <td>{{item.vendido}}</td>
+              <td>
+                <button class="btn btn-info mr-3">Editar</button>
+              </td>
+              <td>
+                <button class="btn btn-danger">Apagar</button>
+              </td>
+            </tr>
+          </tbody>
+          
+        </table>
+      </div>
+    </div>
+
   </div>
