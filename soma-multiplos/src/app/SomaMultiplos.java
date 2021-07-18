@@ -8,7 +8,7 @@ public class SomaMultiplos {
 		
 		Scanner scan = new Scanner(System.in);
 		
-		System.out.print("Por favor, insira um número para saber a soma dos múltiplos de 3 ou de 5 até o número em questão: ");
+		System.out.print("Por favor, insira um número natural para saber a soma dos múltiplos de 3 ou de 5 até o número em questão: ");
 		
 		int numero = scan.nextInt();
 		

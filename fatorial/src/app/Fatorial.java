@@ -8,7 +8,7 @@ public class Fatorial {
 		
 		Scanner scan = new Scanner(System.in);
 		
-		System.out.print("Por favor, insira um número inteiro para saber seu fatorial: ");
+		System.out.print("Por favor, insira um número natural para saber seu fatorial: ");
 		
 		long numero = scan.nextLong();
 		
