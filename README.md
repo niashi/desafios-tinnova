@@ -37,8 +37,8 @@ ________________________________________________________________________________
 
 • Em que consiste? 
 
-    Este desafio é mais complexo: criar uma API RESTFul que realize o CRUD completo de veículos em um Banco de Dados
-    e confeccionar uma Single Page Application que se comunique com o back-end preexistente.
+    Este desafio é mais complexo: criar uma API RESTFul que realize o CRUD completo de veículos em um 
+    Banco de Dados e confeccionar uma Single Page Application que se comunique com o back-end preexistente.
     
 Este aplicativo está criado e pode ser encontrado no seguinte endereço:
 
