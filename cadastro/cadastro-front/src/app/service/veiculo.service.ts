@@ -15,9 +15,9 @@ export class VeiculoService {
     return this.http.get<Veiculo[]>(`${environment.server}/veiculos`)
   }
 
-  getByFindVeiculo() {
+ /*  getByFindVeiculo() {
     
-  }
+  } */
 
   getByIdVeiculo(id: number): Observable<Veiculo>{
     return this.http.get<Veiculo>(`${environment.server}/veiculos/${id}`)
@@ -27,9 +27,13 @@ export class VeiculoService {
     return this.http.post<Veiculo>(`${environment.server}/veiculos`, veiculo)
   }
 
-  putVeiculo(id: number): Observable<Veiculo>{
-    return this.http.put<Veiculo>(`${environment.server}/veiculos/${id}`, id)
+  putVeiculo(veiculo: Veiculo): Observable<Veiculo>{
+    return this.http.put<Veiculo>(`${environment.server}/veiculos`, veiculo)
   }
+
+ /*  putVeiculo(id: number): Observable<Veiculo>{
+    return this.http.put<Veiculo>(`${environment.server}/veiculos/${id}`, id)
+  } */
 
   deleteVeiculo(id: number) {
     return this.http.delete(`${environment.server}/veiculos/${id}`)

@@ -27,4 +27,7 @@ export class VeiculosComponent implements OnInit {
       this.listaVeiculos = resp
     })
   }
+
+  cadastrar() {
+  }
 }

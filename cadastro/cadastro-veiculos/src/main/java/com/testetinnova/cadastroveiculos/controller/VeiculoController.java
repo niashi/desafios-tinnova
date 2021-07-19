@@ -40,8 +40,6 @@ public class VeiculoController {
 				.orElse(ResponseEntity.notFound().build());
 	}
 	
-	// COLOCAR OS OUTROS METODOS GET (/FIND/PARAMETROS)
-	
 	// Permite postar novos veículos no Banco de Dados
 	@PostMapping
 	public ResponseEntity<Veiculo> post (@RequestBody Veiculo veiculo) {

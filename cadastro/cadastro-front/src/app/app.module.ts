@@ -5,17 +5,19 @@ import { HttpClientModule } from '@angular/common/http'
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { VeiculosComponent } from './veiculos/veiculos.component';
-import { EditarComponent } from './editar/editar.component';
 import { CadastroVeiculosComponent } from './cadastro-veiculos/cadastro-veiculos.component';
 import { SobreComponent } from './sobre/sobre.component';
+import { EditarVeiculoComponent } from './editar-veiculo/editar-veiculo.component';
+import { ApagarVeiculoComponent } from './apagar-veiculo/apagar-veiculo.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     VeiculosComponent,
-    EditarComponent,
     CadastroVeiculosComponent,
-    SobreComponent
+    SobreComponent,
+    EditarVeiculoComponent,
+    ApagarVeiculoComponent
   ],
   imports: [
     BrowserModule,
