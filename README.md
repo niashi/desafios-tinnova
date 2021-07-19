@@ -40,16 +40,10 @@ ________________________________________________________________________________
     Este desafio é mais complexo: criar uma API RESTFul que realize o CRUD completo de veículos em um Banco de Dados
     e confeccionar uma Single Page Application que se comunique com o back-end preexistente.
     
-» Funcionalidades da API:
+Este aplicativo está criado e pode ser encontrado no seguinte endereço:
 
- - [x] Listar
-      - Todos
-      - Por ID
-      - Por parâmetro (nome do veículo, marca e ano de fabricação)
+    https://cadastro-veiculos.netlify.app/veiculos
+
+Além disso, os códigos podem ser encontrados em:
         
- - [x] Inserir
-    
- - [x] Atualizar 
-    
- - [x] Excluir
-      - Por id
+    https://github.com/Niashi/cadastro-veiculos-tinnova
