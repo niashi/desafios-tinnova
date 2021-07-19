@@ -44,6 +44,6 @@ Este aplicativo está criado e pode ser encontrado no seguinte endereço:
 
     https://cadastro-veiculos.netlify.app/veiculos
 
-Além disso, os códigos podem ser encontrados em:
+Além disso, os códigos podem ser encontrados no repositório exclusivo do front-end do projeto:
         
     https://github.com/Niashi/cadastro-veiculos-tinnova
