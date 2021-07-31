@@ -42,7 +42,7 @@ ________________________________________________________________________________
     
 Este aplicativo está criado e pode ser encontrado no seguinte endereço:
 
-    https://cadastro-veiculos.netlify.app/veiculos
+    https://cadastro-veiculos.netlify.app
 
 Além disso, os códigos podem ser encontrados no repositório exclusivo do front-end do projeto:
         
